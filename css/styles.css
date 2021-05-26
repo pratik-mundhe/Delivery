@@ -1,0 +1,192 @@
+:root {
+	--shadow: rgba(0, 0, 0, 0.13) 1.95px 1.95px 2.6px;
+	--shadow-light: rgba(10, 10, 10, 0.144) 0px 8px 24px;
+	--shadow-light-dark: rgba(0, 0, 0, 0.158) 3px 3px 20px;
+	--transition: 0.5s;
+	--radius-max: 15px;
+	--radius-min: 10px;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.d-block {
+	align-items: center;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	background-color: #f1f0fd;
+	color: #003084;
+}
+
+ul,
+li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2.3rem;
+	font-weight: 800;
+}
+
+h2 span {
+	color: #ff7101;
+}
+
+.btn {
+	color: #ffffff !important;
+	border: none !important;
+	border-radius: 30px !important;
+	padding: 10px 30px !important;
+	font-weight: 700 !important;
+	transition: var(--transition) !important;
+	background-size: 200% auto;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+.custom-btn {
+	background-image: linear-gradient(to bottom left, #5a60ea 0%, #003084 51%, #5a60ea 100%);
+	box-shadow: var(--shadow-light);
+}
+
+.custom-btn:hover {
+	background-position: bottom center;
+	text-decoration: none;
+	box-shadow: var(--shadow);
+}
+
+.custom-btn:active {
+	transform: translateY(4px);
+}
+
+.custom-btn:focus {
+	box-shadow: none;
+}
+
+.custom-group-btn {
+	background-color: #c1c1c1;
+	display: inline-block;
+	border-radius: 30px;
+}
+
+.custom-group-btn .btn {
+	box-shadow: none !important;
+}
+
+.custom-group-btn .parcel-btn {
+	background-color: #ff7101 !important;
+}
+
+.custom-group-btn .food-btn {
+	background-color: transparent !important;
+	padding-left: 15px !important;
+}
+
+.nav-bar .nav-link {
+	color: #003084!important;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-weight: 600;
+}
+
+.nav-bar .navbar-b {
+	height: 60px;
+}
+
+.nav-bar .custom-btn {
+	margin-left: 25px;
+}
+
+.clients img {
+	transition: all var(--transition);
+}
+
+.clients img:hover {
+	transform: translate3d(0, -10px, 0);
+}
+
+.service {
+	background-color: #ffffff;
+	padding: 30px 20px;
+	border-radius: 15px;
+	box-shadow: var(--shadow);
+	transition: all var(--transition);
+	height: 230px;
+}
+
+.service:hover {
+	background-color: #003084;
+}
+
+.service:hover h5,
+.service:hover p {
+	color: #ffffff;
+}
+
+.service h5 {
+	font-weight: 700;
+	color: #ff7101;
+}
+
+.service p {
+	font-weight: 600;
+}
+
+.service .service-icon {
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	box-shadow: var(--shadow-light);
+	background-color: #ffffff;
+}
+
+.get-to-know {
+	background-color: #ffffff;
+	padding: 15px 10px;
+	border-radius: 15px;
+	height: 150px;
+	box-shadow: var(--shadow);
+	transition: all var(--transition);
+}
+
+.get-to-know:hover {
+	box-shadow: var(--shadow-light-dark);
+}
+
+.get-to-know .count {
+	font-size: 2.3rem;
+	font-weight: 700;
+	color: #ff7101;
+}
+
+.footer .footer-logo {
+	height: 60px;
+	display: inline-block;
+}
+
+.footer-item h5 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+}
+
+.footer-item .footer-list {
+	color: #003084;
+	margin-bottom: 10px;
+	display: inline-block;
+}
